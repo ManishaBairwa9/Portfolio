@@ -3,10 +3,21 @@
 
 .top {
   /* background-color: #dcf8f0; */
-  background-color: #C0EEE4;
-  padding: 20px;
+  /* background-color: #C0EEE4; */
   height: 830px;
+
+  animation: myanimation 10s infinite;
+  overflow: hidden;
 }
+
+@keyframes myanimation {
+  0%  {background-color:#b4d8e8;}
+  25% {background-color:#abbcd6;}
+  50% {background-color:#b0aaff;}
+  75% {background-color:#cfa8c1;}
+  100% {background-color:#b794c5;}
+}
+
 
 body {
   margin: 0;
@@ -14,29 +25,31 @@ body {
 
 }
 
+
 h1{
  font-size: 5.625rem;
   margin-top: 50px;
   font-family: 'Sacramento', cursive;
   /* font-family: "Great Vibes", cursive, sans-serif; */
   font-size: 40px;
-  color: #274439;
+  color: #090526;
   margin-bottom: 0px;
 
 }
 
 h2{
     font-family: 'Montserrat', sans-serif;
-    color: #274439;
+    color: #090526;
     padding-bottom: 10px;
 }
 
 h3{
     font-family: 'Montserrat', sans-serif;
     color: #11999E;
+    font-size: 2rem;
 }
 p {
-  color: #233c33;
+  color: #090526;
  
 }
 
@@ -88,7 +101,7 @@ marquee {
 }
 
 #center{
-  padding: 14px; 
+  padding-top: 1rem; 
 }
 
 .skill-row{
@@ -102,11 +115,13 @@ marquee {
   width: 20%;
   float: left;
   margin-right: 30px;
+  opacity: 70%;
 }
 .sk2{
   width: 20%;
   float: right;
   margin-left: 30px;
+  opacity: 70%;
 }
 
 .intro{
@@ -134,9 +149,10 @@ marquee {
   border-radius: 8px;
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 1.2rem;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  border: none;
 }
 
 .btn:hover {
